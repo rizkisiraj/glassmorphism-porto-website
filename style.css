@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
     position: relative;
     overflow: hidden;
 }
@@ -56,16 +56,50 @@ main {
       );
       position: absolute;
       border-radius: 50%;
+      transition: 0.5s;               
+} 
+ 
+@keyframes cowmove{
+    0% {
+      transform: translateY(0px) rotateY(0deg);
+    }
+    49% {
+      transform: translateY(350px) rotateY(0deg);
+    }
+    50% {
+      transform: translateY(350px) rotateY(0deg);
+    }
+    100% {
+      transform: translateY(0px) rotateY(0deg);
+    }
 }
+
 
 .square1 {
     top: 10%;
     right: -10%;
+    animation: cowmove 4s infinite; 
 }
 
 .square2 {
     bottom: 10%;
     left: -10%;
+    animation: rowmove 4s infinite;
+}
+
+@keyframes rowmove{
+    0% {
+      transform: translateY(0px) rotateY(0deg);
+    }
+    49% {
+      transform: translateY(-350px) rotateY(0deg);
+    }
+    50% {
+      transform: translateY(-350px) rotateY(0deg);
+    }
+    100% {
+      transform: translateY(0px) rotateY(0deg);
+    }
 }
 
 .glass div {
@@ -76,22 +110,30 @@ img {
     border-radius: 50%;
     width: 40%;
     height: 40%;
+    border: 3px solid #426696;
 }
 
-h3 {
+a {
+    text-decoration: none;
     color: #658ec6;
     font-weight: 500;
     opacity: 0.8;
     background: white;
     background: linear-gradient(to left top,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.7));
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.5));
     width: 90%;
     height: auto;
     padding: 0.5rem;
     text-align: center;
     border-radius: 50px;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+}
+
+a:hover {
+    background: linear-gradient(to left top,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.8));
 }
 
 h2 {
