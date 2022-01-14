@@ -128,6 +128,7 @@ a {
     text-align: center;
     border-radius: 50px;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    transition: 1s;
 }
 
 a:hover {
@@ -142,5 +143,12 @@ h2 {
   font-size: 1.6rem;
   opacity: 0.8;
   margin-top: 5px;
+  
+}
+
+@media (max-width: 768px) {
+  a:active {
+    transform: scale(0.1);
+  }
   
 }
