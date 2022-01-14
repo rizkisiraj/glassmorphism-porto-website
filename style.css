@@ -131,11 +131,12 @@ a {
     transition: 1s;
     display: block;
 }
-
-a:hover {
-    background: linear-gradient(to left top,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.8));
+@media (min-width: 800px) {
+  a:hover {
+      background: linear-gradient(to left top,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.8));
+  }
 }
 
 h2 {
