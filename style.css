@@ -116,6 +116,7 @@ img {
 .glass
 
 a {
+    display: block;
     text-decoration: none;
     color: #658ec6;
     font-weight: 500;
@@ -129,7 +130,6 @@ a {
     border-radius: 50px;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
     transition: 1s;
-    display: block;
 }
 @media (min-width: 800px) {
   a:hover {
@@ -148,7 +148,7 @@ h2 {
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   a:active {
     transform: scale(0.1);
   }
