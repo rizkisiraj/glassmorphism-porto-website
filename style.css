@@ -128,10 +128,16 @@ img {
 a {
     display: block;
     text-decoration: none;
-    color: #658ec6;
-    font-weight: 500;
+    
     padding: 0.5rem;
     text-align: center;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #658ec6;
+  font-weight: 500;
+
 }
 
 
