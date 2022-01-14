@@ -113,31 +113,27 @@ img {
     border: 3px solid #426696;
 }
 
-.glass
+.glass .link {
+  width: 90%;
+  height: auto;
+  background: white;
+  background: linear-gradient(to left top,
+  rgba(255, 255, 255, 0.6),
+  rgba(255, 255, 255, 0.5));
+  opacity: 0.8;
+  border-radius: 50px;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+}
 
 a {
     display: block;
     text-decoration: none;
     color: #658ec6;
     font-weight: 500;
-    opacity: 0.8;
-    background: white;
-    background: linear-gradient(to left top,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.5));
     padding: 0.5rem;
     text-align: center;
-    border-radius: 50px;
-    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
-    transition: 1s;
 }
-@media (min-width: 800px) {
-  a:hover {
-      background: linear-gradient(to left top,
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.8));
-  }
-}
+
 
 h2 {
     color: #426696;
@@ -145,12 +141,5 @@ h2 {
   font-size: 1.6rem;
   opacity: 0.8;
   margin-top: 5px;
-  
-}
-
-@media (max-width: 768px) {
-  a:hover {
-    transform: scale(0.5);
-  }
   
 }
